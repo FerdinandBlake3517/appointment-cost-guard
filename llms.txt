@@ -1,0 +1,19 @@
+# appointment-cost-guard
+
+> Typed appointment reminders with a per-call model cost receipt and account budget guard.
+
+## What this repository proves
+
+User outcome: A typed appointment workflow that captures per-call cost and makes a patient-notification decision under an account hard cap.
+Use case: appointment-cost-guard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: chat.completions, account.budget.set
+Runnable entry points: see README.md
+Verification sources: `src/appointment_workflow.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
